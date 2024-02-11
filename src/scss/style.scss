@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .popover-btns {
+        width: 960px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button {
+        position: relative;
+        padding: 16px;
+        border: none;
+        background-color: aquamarine;
+        color: blue;
+
+        .popover {
+            position: absolute;
+            padding-bottom: 8px;
+            width: 150px;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, -100%);
+        }
+    }
+}
